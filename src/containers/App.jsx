@@ -42,7 +42,7 @@ const App = () => {
                     data={data.experience}
                 />
                 <Certificates
-                    data={data.certificate}
+                    data={data.certificates}
                 />
                 <Skills
                     data={data.skills}

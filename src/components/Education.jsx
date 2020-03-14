@@ -13,7 +13,7 @@ const Education = props => (
                     <div className="Education-item" key={`Edu-${index}`}>
                         <H3Styled>
                             {edu.degree} @ {edu.institution}
-                            <span>{ edu.startDate - edu.endDate }</span>
+                            <span> ({ edu.startDate + "-" + edu.endDate })</span>
                         </H3Styled>
                         <PStyled name={edu.description}></PStyled>
                     </div>
