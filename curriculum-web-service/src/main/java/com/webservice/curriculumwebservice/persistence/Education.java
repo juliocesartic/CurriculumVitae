@@ -1,6 +1,5 @@
 package com.webservice.curriculumwebservice.persistence;
 
-import java.util.Date;
 
 public class Education {
 	
@@ -8,7 +7,7 @@ public class Education {
 	private String degree;
 	private String description;
 	private String institution;
-	private Date endDate;
+	private String endDate;
 	
 	public Education() {
 		super();
@@ -46,11 +45,11 @@ public class Education {
 		this.institution = institution;
 	}
 
-	public Date getEndDate() {
+	public String getEndDate() {
 		return endDate;
 	}
 
-	public void setEndDate(Date endDate) {
+	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 	

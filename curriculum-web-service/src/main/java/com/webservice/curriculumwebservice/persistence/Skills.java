@@ -3,7 +3,7 @@ package com.webservice.curriculumwebservice.persistence;
 public class Skills {
 	private Integer _id;
 	private String name;
-	private int percentage;
+	private String percentage;
 	
 	public Skills() {
 		super();
@@ -25,11 +25,11 @@ public class Skills {
 		this.name = name;
 	}
 
-	public int getPercentage() {
+	public String getPercentage() {
 		return percentage;
 	}
 
-	public void setPercentage(int percentage) {
+	public void setPercentage(String percentage) {
 		this.percentage = percentage;
 	}
 	

@@ -1,14 +1,12 @@
 package com.webservice.curriculumwebservice.persistence;
 
-import java.util.Date;
-
 public class Experience {
 	private Integer _id;
 	private String company;
 	private String jobDescription;
 	private String jobTitle;
-	private Date startDate;
-	private Date endDate;
+	private String startDate;
+	private String endDate;
 	
 	public Experience() {
 		super();
@@ -46,19 +44,19 @@ public class Experience {
 		this.jobTitle = jobTitle;
 	}
 
-	public Date getStartDate() {
+	public String getStartDate() {
 		return startDate;
 	}
 
-	public void setStartDate(Date startDate) {
+	public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}
 
-	public Date getEndDate() {
+	public String getEndDate() {
 		return endDate;
 	}
 
-	public void setEndDate(Date endDate) {
+	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 	

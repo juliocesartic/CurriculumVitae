@@ -1,11 +1,10 @@
 package com.webservice.curriculumwebservice.persistence;
 
-import java.util.Date;
 
 public class Certificate {
 	
 	private int _id;
-	private Date date;
+	private String date;
 	private String description;
 	private String institution;
 	
@@ -29,11 +28,11 @@ public class Certificate {
 		this._id = _id;
 	}
 
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 
