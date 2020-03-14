@@ -1,17 +1,42 @@
 package com.webservice.curriculumwebservice.persistence;
 
-import org.bson.types.ObjectId;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter @Setter
-@NoArgsConstructor
-@Document(collection = "Social")
 public class Social {
-	private ObjectId _id;
+	
+	private Integer _id;
 	private String name;
 	private String url;
+	
+	public Social() {
+		super();
+	}
+
+	public Integer get_id() {
+		return _id;
+	}
+
+	public void set_id(Integer _id) {
+		this._id = _id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	
+	
+	
+	
+	
 }

@@ -2,22 +2,61 @@ package com.webservice.curriculumwebservice.persistence;
 
 import java.util.Date;
 
-import org.bson.types.ObjectId;
-import org.springframework.data.mongodb.core.mapping.Document;
-
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter @Setter
-@NoArgsConstructor
-@Document(collection = "Education")
 public class Education {
 	
-	private ObjectId _id;
+	private Integer _id;
 	private String degree;
 	private String description;
 	private String institution;
 	private Date endDate;
+	
+	public Education() {
+		super();
+	}
+
+	public Integer get_id() {
+		return _id;
+	}
+
+	public void set_id(Integer _id) {
+		this._id = _id;
+	}
+
+	public String getDegree() {
+		return degree;
+	}
+
+	public void setDegree(String degree) {
+		this.degree = degree;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getInstitution() {
+		return institution;
+	}
+
+	public void setInstitution(String institution) {
+		this.institution = institution;
+	}
+
+	public Date getEndDate() {
+		return endDate;
+	}
+
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
+	
+	
+	
+	
+	
 
 }
