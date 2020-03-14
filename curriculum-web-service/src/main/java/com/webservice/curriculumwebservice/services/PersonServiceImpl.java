@@ -1,6 +1,7 @@
 package com.webservice.curriculumwebservice.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,14 @@ public class PersonServiceImpl implements PersonService {
 		person = repository.save(person);
 		return person;
 	}
+
+	@Override
+	public Optional<Person> getPersonById(Integer id) {
+		// TODO Auto-generated method stub
+		return repository.findById(id);
+	}
+
+
 
 
 }
