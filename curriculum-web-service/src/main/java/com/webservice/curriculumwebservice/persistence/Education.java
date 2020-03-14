@@ -7,6 +7,7 @@ public class Education {
 	private String degree;
 	private String description;
 	private String institution;
+	private String startDate;
 	private String endDate;
 	
 	public Education() {
@@ -52,6 +53,16 @@ public class Education {
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
+
+	public String getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(String startDate) {
+		this.startDate = startDate;
+	}
+	
+	
 	
 	
 	
