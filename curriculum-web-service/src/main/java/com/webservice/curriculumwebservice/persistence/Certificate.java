@@ -4,6 +4,7 @@ package com.webservice.curriculumwebservice.persistence;
 public class Certificate {
 	
 	private int _id;
+	private String name;
 	private String date;
 	private String description;
 	private String institution;
@@ -20,6 +21,17 @@ public class Certificate {
 	}
 	
 	
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public int get_id() {
 		return _id;
 	}
